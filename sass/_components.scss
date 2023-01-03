@@ -1,0 +1,35 @@
+// Import Base File
+@use "./base" as *;
+// Attribution
+%attribution {
+  & {
+    width: 320px;
+    @media (min-width: 768px) {
+      width: 570px;
+    }
+    margin: auto;
+    background-color: $very-dark-magenta;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    font-size: 1.075rem;
+  }
+  p.attribution {
+    text-align: center;
+    padding: 10px 25px;
+    padding-bottom: 5px;
+    color: $white;
+  }
+  a {
+    font-weight: 700;
+    &:first-child {
+      color: #c2d375;
+    }
+    &:last-child {
+      color: #7ed3d1;
+    }
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

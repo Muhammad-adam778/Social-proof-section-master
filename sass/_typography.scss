@@ -1,0 +1,68 @@
+// Import Base File
+@use "./base";
+
+body {
+  font-size: base.$body-copy;
+  font-family: base.$league-spartan;
+}
+
+// Section One
+.description {
+  & {
+    text-align: center;
+    @include base.breakpoints("large") {
+      text-align: left;
+    }
+  }
+  h1 {
+    color: base.$very-dark-magenta;
+    font-weight: base.$font-bold;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    @include base.breakpoints("large") {
+      font-size: 3.3rem;
+    }
+  }
+  p {
+    color: base.$dark-Grayish-Magenta;
+    font-weight: base.$font-medium;
+    font-size: base.$main-font-size;
+    line-height: base.$p-line-height;
+    margin-bottom: 30px;
+  }
+}
+.rating {
+  p {
+    color: base.$very-dark-magenta;
+    font-weight: base.$font-medium;
+    font-size: base.$main-font-size;
+    @include base.breakpoints("large") {
+      font-weight: base.$font-bold;
+    }
+  }
+}
+
+// Section Two
+.user {
+  .info {
+    & {
+      color: base.$white;
+      font-weight: base.$font-bold;
+    }
+    h2 {
+      color: base.$white;
+      font-size: base.$main-font-size;
+      margin-bottom: 4px;
+    }
+    p {
+      color: base.$soft-pink;
+      font-size: base.$main-font-size;
+      font-weight: base.$font-regular;
+    }
+  }
+  .testimonial {
+    color: base.$white;
+    font-size: base.$main-font-size;
+    line-height: base.$p-line-height;
+  }
+}

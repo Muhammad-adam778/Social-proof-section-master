@@ -1,0 +1,57 @@
+// Mixins
+// => Breakpoints
+@mixin breakpoints($point) {
+  @if ($point == "mobile") {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if ($point == "small") {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if ($point == "medium") {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if ($point == "large") {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if ($point == "small+") {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if ($point == "medium+") {
+    @media (min-width: 992px) {
+      @content;
+    }
+  } @else {
+    @error " '#{$point}' Is Invalid Screen Breakpoint";
+  }
+}
+// =======================================================================
+
+// Variables
+// => Colors
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+$dark-Grayish-Magenta: hsl(303, 10%, 53%);
+$light-grayish-Magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+// => Font Family
+$league-spartan: "League Spartan", sans-serif;
+// => Font Weight
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+// => Font Size
+$body-copy: 15px;
+$main-font-size: 1.075rem;
+// => Border Radius
+$main-bd-radius: 8px;
+// => Margin
+$box-mg-bottom: 10px;
+// => Line Height
+$p-line-height: 1.3;
+// =======================================================================
