@@ -6,7 +6,7 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Demo:
 
-- https://muhammad-adam778.github.io/Social-proof-section-master/
+- https://muhammad-abdusalam.github.io/Social-proof-section-master/
 
 ### Built with ⚒️
 
@@ -17,4 +17,4 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 ### Author
 
 - Frontend Mentor - [@Muhammad-adam778](https://www.frontendmentor.io/profile/Muhammad-adam778)
-- Linkedin - [@Muhammad-adam778](https://www.linkedin.com/in/muhammad-adam778/)
+- Linkedin - [@muhammad-abdusalam](https://www.linkedin.com/in/muhammad-abdusalam)
